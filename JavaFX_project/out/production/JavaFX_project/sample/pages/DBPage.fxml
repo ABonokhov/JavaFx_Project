@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #2E3370;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.DBController">
+    <children>
+        <AnchorPane layoutX="26.0" layoutY="29.0" prefHeight="443.0" prefWidth="849.0" style="-fx-background-color: E6E6FA;">
+            <children>
+                <AnchorPane layoutX="58.0" prefHeight="443.0" prefWidth="732.0" style="-fx-background-color: B0C4DE;">
+               <children>
+                  <TableView fx:id="income_table" layoutX="14.0" layoutY="82.0" prefHeight="260.0" prefWidth="324.0">
+                    <columns>
+                      <TableColumn fx:id="sum_income" prefWidth="95.0" text="Сумма дохода" />
+                      <TableColumn fx:id="com_income" prefWidth="133.0" text="Источник дохода" />
+                        <TableColumn fx:id="user_income" prefWidth="95.0" text="Пользователь" />
+                    </columns>
+                  </TableView>
+                  <TableView fx:id="expenses_table" layoutX="402.0" layoutY="82.0" prefHeight="260.0" prefWidth="317.0">
+                    <columns>
+                      <TableColumn fx:id="expenses_sum" prefWidth="108.0" text="Сумма расходов" />
+                      <TableColumn fx:id="expenses_com" prefWidth="117.0" text="Источник расходов" />
+                        <TableColumn minWidth="0.0" prefWidth="0.0" text="Column X" />
+                        <TableColumn fx:id="expenses_user" prefWidth="91.0" text="Пользователь" />
+                    </columns>
+                  </TableView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="66.0" layoutY="37.0" prefHeight="25.0" prefWidth="206.0" text="Учет доходов семьи" textFill="#2d03a1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="471.0" layoutY="37.0" prefHeight="27.0" prefWidth="206.0" text="Учет расходов семьи" textFill="#2d03a1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="349.0" layoutY="-23.0" prefHeight="470.0" prefWidth="35.0" style="-fx-background-color: #2E3370;" />
+                  <Button fx:id="ExitButton" layoutX="34.0" layoutY="391.0" mnemonicParsing="false" onAction="#switchToMainPage3" prefHeight="30.0" prefWidth="89.0" style="-fx-background-color: FFF0F5;" text="Назад">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+      <VBox prefHeight="200.0" prefWidth="100.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #2E3370;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ExpensesPageController">
+    <children>
+        <AnchorPane layoutX="26.0" layoutY="29.0" prefHeight="443.0" prefWidth="849.0" style="-fx-background-color: E6E6FA;">
+            <children>
+                <AnchorPane layoutX="154.0" layoutY="84.0" prefHeight="325.0" prefWidth="596.0" style="-fx-background-color: B0C4DE;">
+                    <children>
+                        <Label alignment="CENTER" layoutX="74.0" layoutY="14.0" prefHeight="30.0" prefWidth="404.0" text="Введите сумму расходов за текущий месяц:" textFill="#2d03a1">
+                            <font>
+                                <Font name="Consolas Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="SumField" layoutX="170.0" layoutY="50.0" prefHeight="30.0" prefWidth="223.0" promptText="Сумма..">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+                        <Label layoutX="402.0" layoutY="47.0" prefHeight="36.0" prefWidth="58.0" text="BYN">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="69.0" layoutY="94.0" prefHeight="30.0" prefWidth="415.0" text="Зафиксируйте расходы за текущий месяц:" textFill="#2d03a1">
+                            <font>
+                                <Font name="Consolas Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="ComField" alignment="TOP_LEFT" layoutX="119.0" layoutY="132.0" prefHeight="99.0" prefWidth="340.0" promptText="Комменатрий...">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </TextField>
+                        <Button fx:id="SendExpensesButton" layoutX="195.0" layoutY="250.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="188.0" style="-fx-background-color: #32CD32;" text="Сохранить и отправить" textFill="WHITE">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="ExitButton" layoutX="25.0" layoutY="271.0" mnemonicParsing="false" onAction="#switchToMainPage2" prefHeight="30.0" prefWidth="89.0" style="-fx-background-color: FFF0F5;" text="Назад">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <ImageView fitHeight="117.0" fitWidth="275.0" layoutX="8.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/669946_home_building_estate_house_real_icon.png" />
+                    </image>
+                </ImageView>
+                <AnchorPane layoutX="106.0" layoutY="14.0" prefHeight="63.0" prefWidth="654.0" style="-fx-background-color: FFF0F5;">
+                    <children>
+                        <Label layoutX="127.0" layoutY="8.0" text="Учет доходов и расходов семьи" textFill="#2d03a1">
+                            <font>
+                                <Font name="Microsoft New Tai Lue" size="32.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="69.0" fitWidth="93.0" layoutX="11.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/3316542_animal_cat_cats_gato_icon.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
